@@ -42,15 +42,16 @@
 				a SystemVerilog program to solve a sudoku puzzle, when I was sitting in a class trying to solve
 				a Sudoku puzzle put up by the professor during the class break.
 			</p><p>	
-				I started looking up different algorithms in wikipedia which could do this and 'backtracking' seemed
+				I started looking up different algorithms which could do this and 'backtracking' seemed
 				to be the most popular and easiest implementation. Though it is highly inefficient and recursive, with the high speed
 				processors of today one could easily brute force a sudoku puzzle in seconds using this approach. Hence i decided to 
 				implement the same in SystemVerilog.
 			
 			</p>
-			
-			
-            <p>Below is the SystemVerilog code which solves a given sudoku puzzle through backtracking:</p>
+			<p> Though other implementations which use constrained randomization to solve a Sudoku puzzle do exist, I was curious to
+				try this out for myself to see if a recursive backtracking implementation would actually work in SystemVerilog.And it comes as no surprise that it actually works quite well. </p>
+            <p><b>The SystemVerilog code which solves a given sudoku puzzle through backtracking and it's corresponding output are shown below....</b></p>
+			<h2>Code</h2>
             <pre><code>
 //******************************************************************
 // Module Name: Sudoku solver
@@ -207,6 +208,9 @@ initial
 	end
 endmodule			
 				</code></pre>
+			<h2> Output</h2>
+			<p> The output of the above code will look something like this...</p>
+			<img src="sudoku_output.png">
           </li>
           <li>
       </section>
